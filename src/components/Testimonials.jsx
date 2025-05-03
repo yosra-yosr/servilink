@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Typography, Card, Rate, Avatar } from 'antd';
+import { Row, Col, Typography, Rate, Avatar } from 'antd';
 import { FacebookOutlined } from '@ant-design/icons';
 
 const { Title, Paragraph } = Typography;
