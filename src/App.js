@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import { Layout } from 'antd';// OU 'antd/dist/antd.css' selon votre version d'Ant Design
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Features from './components/Features';
+import HowItWorks from './components/HowItWorks';
+import Testimonials from './components/Testimonials';
+import Download from './components/Download';
+import Footer from './components/Footer';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout className="layout">
+      <Header />
+      <Layout.Content>
+        <Hero />
+        <Features />
+        <HowItWorks />
+        <Testimonials />
+        <Download />
+      </Layout.Content>
+      <Footer />
+    </Layout>
   );
-}
+};
 
 export default App;
