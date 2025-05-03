@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Typography, Button, Statistic } from 'antd';
+import { Row, Col, Typography, Button } from 'antd';
 import { AppleOutlined, AndroidOutlined, CheckCircleOutlined } from '@ant-design/icons';
 
 const { Title, Paragraph } = Typography;

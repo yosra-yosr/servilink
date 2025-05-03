@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Layout, Menu, Button, Drawer } from 'antd';
+import { Layout, Button, Drawer } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import { Link } from 'react-scroll';
 
