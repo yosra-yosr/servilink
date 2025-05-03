@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Layout } from 'antd';// OU 'antd/dist/antd.css' selon votre version d'Ant Design
 import Header from './components/Header';
 import Hero from './components/Hero';
