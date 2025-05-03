@@ -1,19 +1,17 @@
 import React from 'react';
-import { Layout, Row, Col, Typography, Divider, List, Button, Input, Space } from 'antd';
+import { Layout, Row, Col, Typography,  List, Button, } from 'antd';
 import { 
   FacebookOutlined, 
   InstagramOutlined, 
   LinkedinOutlined,
-  TwitterOutlined,
   MailOutlined,
   PhoneOutlined,
   EnvironmentOutlined,
-  SendOutlined,
   RightOutlined,
   HeartOutlined
 } from '@ant-design/icons';
 
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 const { Footer: AntFooter } = Layout;
 
 const Footer = () => {
@@ -107,7 +105,7 @@ const Footer = () => {
                     <a href="https://www.instagram.com/servilink_2024?igsh=MWM0MHU0cWlkaHg4eA==" target="_blank" rel="noopener noreferrer" className="social-link">
                       <InstagramOutlined />
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
                       <LinkedinOutlined />
                     </a>
                   </div>
