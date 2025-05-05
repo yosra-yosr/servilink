@@ -1,0 +1,33 @@
+{
+    "sectionTag": "Découvrez nos fonctionnalités",
+    "title": "Des outils puissants pour",
+    "titleHighlight": "simplifier votre quotidien",
+    "description": "Découvrez comment ServiLink transforme la façon dont vous trouvez et réservez des services professionnels grâce à des fonctionnalités innovantes.",
+    "learnMore": "En savoir plus",
+    "features": [
+      {
+        "title": "Recherche intelligente",
+        "description": "Trouvez rapidement le prestataire idéal grâce à notre algorithme de correspondance avancé basé sur vos besoins spécifiques."
+      },
+      {
+        "title": "Évaluations vérifiées",
+        "description": "Consultez les avis et notations des clients précédents pour faire un choix éclairé et en toute confiance."
+      },
+      {
+        "title": "Réservation instantanée",
+        "description": "Prenez rendez-vous directement via l'application et recevez une confirmation immédiate de votre prestataire."
+      },
+      {
+        "title": "Communication directe",
+        "description": "Discutez en temps réel avec vos prestataires pour clarifier vos besoins et obtenir des devis personnalisés."
+      },
+      {
+        "title": "Paiements sécurisés",
+        "description": "Effectuez vos transactions en toute sécurité directement via l'application avec notre système de paiement protégé."
+      },
+      {
+        "title": "Géolocalisation",
+        "description": "Découvrez les prestataires disponibles près de chez vous et suivez leur arrivée en temps réel."
+      }
+    ]
+  }

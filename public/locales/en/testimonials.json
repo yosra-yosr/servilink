@@ -1,0 +1,47 @@
+{
+    "sectionTag": "Customer Testimonials",
+    "title": "What",
+    "titleHighlight": "our users",
+    "titleEnd": "are saying",
+    "description": "Discover the experiences of our clients and providers who use ServiLink daily.",
+    "testimonials": [
+      {
+        "rating": 5,
+        "text": "Thanks to ServiLink, I found a plumber available for an emergency on a Sunday evening. The app is intuitive and the service was perfect. The provider arrived within 30 minutes and quickly resolved my problem. I highly recommend!",
+        "name": "Sophie M.",
+        "title": "Client for 6 months",
+        "image": "/api/placeholder/100/100",
+        "color": "#4299e1"
+      },
+      {
+        "rating": 4.5,
+        "text": "As an independent electrician, ServiLink has allowed me to grow my clientele and fill my schedule. The matching system is really effective and the appointment management interface is a real plus for my daily organization.",
+        "name": "Thomas L.",
+        "title": "Provider for 1 year",
+        "image": "/api/placeholder/100/100",
+        "color": "#f6ad55"
+      },
+      {
+        "rating": 5,
+        "text": "I was able to find a piano teacher for my daughter in just a few minutes. The filtering system by skills and proximity is really convenient. The detailed profiles and presentation videos helped me make the right choice.",
+        "name": "Marc D.",
+        "title": "Client for 3 months",
+        "image": "/api/placeholder/100/100",
+        "color": "#68d391"
+      }
+    ],
+    "stats": {
+      "satisfaction": {
+        "value": "98%",
+        "label": "Satisfaction Rate"
+      },
+      "rating": {
+        "value": "4.8/5",
+        "label": "Average Rating"
+      },
+      "reviews": {
+        "value": "5000+",
+        "label": "Verified Reviews"
+      }
+    }
+  }

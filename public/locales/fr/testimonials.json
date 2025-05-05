@@ -1,0 +1,47 @@
+{
+    "sectionTag": "Témoignages Clients",
+    "title": "Ce que",
+    "titleHighlight": "nos utilisateurs",
+    "titleEnd": "en disent",
+    "description": "Découvrez les expériences de nos clients et prestataires qui utilisent ServiLink au quotidien.",
+    "testimonials": [
+      {
+        "rating": 5,
+        "text": "Grâce à ServiLink, j'ai trouvé un plombier disponible pour une urgence un dimanche soir. L'application est intuitive et le service était parfait. Le prestataire est arrivé en moins de 30 minutes et a rapidement résolu mon problème. Je recommande vivement !",
+        "name": "Sophie M.",
+        "title": "Cliente depuis 6 mois",
+        "image": "/api/placeholder/100/100",
+        "color": "#4299e1"
+      },
+      {
+        "rating": 4.5,
+        "text": "En tant qu'électricien indépendant, ServiLink m'a permis de développer ma clientèle et de remplir mon agenda. Le système de mise en relation est vraiment efficace et l'interface de gestion des rendez-vous est un vrai plus pour mon organisation quotidienne.",
+        "name": "Thomas L.",
+        "title": "Prestataire depuis 1 an",
+        "image": "/api/placeholder/100/100",
+        "color": "#f6ad55"
+      },
+      {
+        "rating": 5,
+        "text": "J'ai pu trouver un professeur de piano pour ma fille en quelques minutes seulement. Le système de filtrage par compétences et proximité est vraiment pratique. Les profils détaillés et les vidéos de présentation m'ont aidé à faire le bon choix.",
+        "name": "Marc D.",
+        "title": "Client depuis 3 mois",
+        "image": "/api/placeholder/100/100",
+        "color": "#68d391"
+      }
+    ],
+    "stats": {
+      "satisfaction": {
+        "value": "98%",
+        "label": "Taux de Satisfaction"
+      },
+      "rating": {
+        "value": "4.8/5",
+        "label": "Note Moyenne"
+      },
+      "reviews": {
+        "value": "5000+",
+        "label": "Avis Vérifiés"
+      }
+    }
+}

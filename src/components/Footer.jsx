@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Row, Col, Typography,  List, Button, } from 'antd';
+import { Layout, Row, Col, Typography, List, Button, } from 'antd';
 import { 
   FacebookOutlined, 
   InstagramOutlined, 
@@ -10,36 +10,39 @@ import {
   RightOutlined,
   HeartOutlined
 } from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
 
 const { Title, Paragraph } = Typography;
 const { Footer: AntFooter } = Layout;
 
 const Footer = () => {
+  const { t } = useTranslation(['footer']);
+
   const aboutLinks = [
-    { title: 'Notre histoire', href: '#' },
-    { title: 'Notre équipe', href: '#' },
-    { title: 'Carrières', href: '#' },
-    { title: 'Actualités', href: '#' },
+    { title: t('aboutLinks.ourStory'), href: '#' },
+    { title: t('aboutLinks.ourTeam'), href: '#' },
+    { title: t('aboutLinks.careers'), href: '#' },
+    { title: t('aboutLinks.news'), href: '#' },
   ];
 
   const resourceLinks = [
-    { title: 'Centre d\'aide', href: '#' },
-    { title: 'Tutoriels', href: '#' },
-    { title: 'Blog', href: '#' },
-    { title: 'FAQ', href: '#' },
+    { title: t('resourceLinks.helpCenter'), href: '#' },
+    { title: t('resourceLinks.tutorials'), href: '#' },
+    { title: t('resourceLinks.blog'), href: '#' },
+    { title: t('resourceLinks.faq'), href: '#' },
   ];
 
   const legalLinks = [
-    { title: 'Conditions d\'utilisation', href: '#' },
-    { title: 'Politique de confidentialité', href: '#' },
-    { title: 'Mentions légales', href: '#' },
-    { title: 'Cookies', href: '#' },
+    { title: t('legalLinks.termsOfUse'), href: '#' },
+    { title: t('legalLinks.privacyPolicy'), href: '#' },
+    { title: t('legalLinks.legalNotice'), href: '#' },
+    { title: t('legalLinks.cookies'), href: '#' },
   ];
 
   const contactInfo = [
     { icon: <MailOutlined />, text: 'servilink6@gmail.com', href: 'mailto:servilink6@gmail.com' },
     { icon: <PhoneOutlined />, text: '+216 24 372 697', href: 'tel:+21624372697' },
-    { icon: <EnvironmentOutlined />, text: 'Pépinière des entreprises, Rue de jérusalem Radès', href: 'https://maps.google.com' },
+    { icon: <EnvironmentOutlined />, text: t('contactInfo.address'), href: 'https://maps.google.com' },
   ];
 
   return (
@@ -53,16 +56,15 @@ const Footer = () => {
                   <img src="/images/logo.png" alt="ServiLink Logo" />
                 </div>
                 <Paragraph className="footer-description">
-                  Connectez-vous aux meilleurs prestataires de services pour tous vos besoins quotidiens. Notre plateforme innovante révolutionne la façon de trouver des professionnels qualifiés.
+                  {t('description')}
                 </Paragraph>
-                
               </div>
             </Col>
             
             <Col xs={24} sm={24} md={16} lg={16}>
               <Row gutter={[24, 32]}>
                 <Col xs={24} sm={8}>
-                  <Title level={4} className="footer-title">À propos</Title>
+                  <Title level={4} className="footer-title">{t('about')}</Title>
                   <List
                     dataSource={aboutLinks}
                     renderItem={item => (
@@ -75,7 +77,7 @@ const Footer = () => {
                 </Col>
                 
                 <Col xs={24} sm={8}>
-                  <Title level={4} className="footer-title">Ressources</Title>
+                  <Title level={4} className="footer-title">{t('resources')}</Title>
                   <List
                     dataSource={resourceLinks}
                     renderItem={item => (
@@ -88,7 +90,7 @@ const Footer = () => {
                 </Col>
                 
                 <Col xs={24} sm={8}>
-                  <Title level={4} className="footer-title">Contact</Title>
+                  <Title level={4} className="footer-title">{t('contact')}</Title>
                   <List
                     dataSource={contactInfo}
                     renderItem={item => (
@@ -120,7 +122,7 @@ const Footer = () => {
         <div className="container">
           <Row justify="space-between" align="middle">
             <Col xs={24} sm={12}>
-              <Title level={4} className="legal-title">Légal</Title>
+              <Title level={4} className="legal-title">{t('legal')}</Title>
               <div className="legal-links">
                 {legalLinks.map((link, index) => (
                   <React.Fragment key={index}>
@@ -132,10 +134,10 @@ const Footer = () => {
             </Col>
             <Col xs={24} sm={12} className="download-btns">
               <Button className="app-store-btn">
-                App Store
+                {t('appStore')}
               </Button>
               <Button className="play-store-btn">
-                Google Play
+                {t('googlePlay')}
               </Button>
             </Col>
           </Row>
@@ -145,7 +147,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container">
           <Paragraph className="copyright">
-            &copy; 2025 ServiLink. Développé avec <HeartOutlined /> par Zoug Yosra. Tous droits réservés.
+            &copy; 2025 ServiLink. {t('developedWith')} <HeartOutlined /> {t('by')} Zoug Yosra. {t('allRightsReserved')}.
           </Paragraph>
         </div>
       </div>

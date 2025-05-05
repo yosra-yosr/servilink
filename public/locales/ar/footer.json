@@ -1,0 +1,33 @@
+{
+    "description": "تواصل مع أفضل مقدمي الخدمات لجميع احتياجاتك اليومية. منصتنا المبتكرة تحدث ثورة في طريقة العثور على المتخصصين المؤهلين.",
+    "about": "حول",
+    "resources": "موارد",
+    "contact": "اتصل بنا",
+    "legal": "قانوني",
+    "appStore": "آب ستور",
+    "googlePlay": "جوجل بلاي",
+    "developedWith": "طُوّر بـ",
+    "by": "بواسطة",
+    "allRightsReserved": "جميع الحقوق محفوظة",
+    "aboutLinks": {
+      "ourStory": "قصتنا",
+      "ourTeam": "فريقنا",
+      "careers": "وظائف",
+      "news": "أخبار"
+    },
+    "resourceLinks": {
+      "helpCenter": "مركز المساعدة",
+      "tutorials": "دروس تعليمية",
+      "blog": "المدونة",
+      "faq": "الأسئلة الشائعة"
+    },
+    "legalLinks": {
+      "termsOfUse": "شروط الاستخدام",
+      "privacyPolicy": "سياسة الخصوصية",
+      "legalNotice": "إشعار قانوني",
+      "cookies": "ملفات تعريف الارتباط"
+    },
+    "contactInfo": {
+      "address": "حاضنة الأعمال، شارع القدس، رادس"
+    }
+  }

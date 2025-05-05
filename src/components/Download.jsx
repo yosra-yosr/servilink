@@ -1,16 +1,15 @@
 import React from 'react';
 import { Typography, Button, Row, Col } from 'antd';
 import { AppleOutlined, AndroidOutlined, CheckCircleOutlined } from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
 
 const { Title, Paragraph } = Typography;
 
 const Download = () => {
-  const benefits = [
-    "Accès à plus de 1200 prestataires vérifiés",
-    "Interface intuitive et facile à utiliser",
-    "Service client disponible 7j/7",
-    "Mises à jour régulières avec de nouvelles fonctionnalités"
-  ];
+  const { t } = useTranslation(['download']);
+
+  // Récupération des avantages depuis la traduction
+  const benefits = t('benefits', { returnObjects: true });
 
   return (
     <section className="download" id="download">
@@ -23,15 +22,15 @@ const Download = () => {
           <Col xs={24} lg={12}>
             <div className="download-content">
               <div className="download-badge">
-                <span>Disponible maintenant</span>
+                <span>{t('badge')}</span>
               </div>
               
               <Title level={2} className="download-title">
-                Prêt à simplifier votre recherche de services?
+                {t('title')}
               </Title>
               
               <Paragraph className="download-description">
-                Téléchargez ServiLink dès maintenant et connectez-vous avec les meilleurs prestataires de votre région en quelques clics. Rejoignez notre communauté grandissante d'utilisateurs satisfaits.
+                {t('description')}
               </Paragraph>
               
               <div className="download-features">
@@ -51,8 +50,8 @@ const Download = () => {
                   className="download-btn android-btn"
                 >
                   <div>
-                    <span>TÉLÉCHARGER SUR</span>
-                    <p>Google Play</p>
+                    <span>{t('downloadOn')}</span>
+                    <p>{t('googlePlay')}</p>
                   </div>
                 </Button>
                 <Button 
@@ -62,8 +61,8 @@ const Download = () => {
                   className="download-btn apple-btn"
                 >
                   <div>
-                    <span>TÉLÉCHARGER SUR</span>
-                    <p>App Store</p>
+                    <span>{t('downloadOn')}</span>
+                    <p>{t('appStore')}</p>
                   </div>
                 </Button>
               </div>
@@ -80,15 +79,15 @@ const Download = () => {
               </div>
               <div className="download-badge-floating download-badge-1">
                 <div className="download-badge-icon">⭐</div>
-                <span>4.8/5</span>
+                <span>{t('badges.rating')}</span>
               </div>
               <div className="download-badge-floating download-badge-2">
                 <div className="download-badge-icon">🚀</div>
-                <span>Rapide</span>
+                <span>{t('badges.fast')}</span>
               </div>
               <div className="download-badge-floating download-badge-3">
                 <div className="download-badge-icon">👍</div>
-                <span>Fiable</span>
+                <span>{t('badges.reliable')}</span>
               </div>
             </div>
           </Col>

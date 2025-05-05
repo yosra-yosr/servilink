@@ -1,0 +1,24 @@
+{
+    "badge": "Nouvelle Application",
+    "title": "Vos services à domicile",
+    "titleHighlight": "en un instant",
+    "description": "ServiLink connecte les prestataires qualifiés avec des clients en quête de solutions professionnelles. Simple, rapide et fiable pour tous vos besoins quotidiens.",
+    "features": {
+      "verified": "Trouvez des prestataires vérifiés près de chez vous",
+      "booking": "Réservez en quelques clics",
+      "payment": "Paiement sécurisé et transparent"
+    },
+    "downloadOn": "TÉLÉCHARGER SUR",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "stats": {
+      "users": "Utilisateurs",
+      "providers": "Prestataires",
+      "satisfaction": "Satisfaction"
+    },
+    "badges": {
+      "fast": "Rapide",
+      "secure": "Sécurisé",
+      "quality": "Qualitatif"
+    }
+  }

@@ -1,0 +1,33 @@
+{
+    "description": "Connect with the best service providers for all your daily needs. Our innovative platform revolutionizes the way to find qualified professionals.",
+    "about": "About",
+    "resources": "Resources",
+    "contact": "Contact",
+    "legal": "Legal",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "developedWith": "Developed with",
+    "by": "by",
+    "allRightsReserved": "All rights reserved",
+    "aboutLinks": {
+      "ourStory": "Our Story",
+      "ourTeam": "Our Team",
+      "careers": "Careers",
+      "news": "News"
+    },
+    "resourceLinks": {
+      "helpCenter": "Help Center",
+      "tutorials": "Tutorials",
+      "blog": "Blog",
+      "faq": "FAQ"
+    },
+    "legalLinks": {
+      "termsOfUse": "Terms of Use",
+      "privacyPolicy": "Privacy Policy",
+      "legalNotice": "Legal Notice",
+      "cookies": "Cookies"
+    },
+    "contactInfo": {
+      "address": "Business Incubator, Jerusalem Street, Rades"
+    }
+  }

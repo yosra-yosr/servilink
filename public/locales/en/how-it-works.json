@@ -1,0 +1,24 @@
+{
+  "sectionTag": "Simple Process",
+  "title": "How",
+  "titleHighlight": "it works",
+  "description": "In a few simple steps, connect with the ideal provider for your project.",
+  "steps": [
+    {
+      "title": "Download the app",
+      "description": "Install ServiLink on your smartphone and create your account in seconds with a simple and intuitive interface."
+    },
+    {
+      "title": "Describe your need",
+      "description": "Specify the service you need, your location and availability to get the best matches."
+    },
+    {
+      "title": "Choose your provider",
+      "description": "Browse profiles, read reviews and select the provider that perfectly matches your expectations."
+    },
+    {
+      "title": "Book and enjoy",
+      "description": "Confirm the booking, pay securely and enjoy the requested service without administrative hassles."
+    }
+  ]
+}

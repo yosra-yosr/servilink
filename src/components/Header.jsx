@@ -2,11 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Layout, Button, Drawer } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import { Link } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Header = () => {
   const [visible, setVisible] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState('hero');
+  const { t } = useTranslation(['header']);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,10 +45,10 @@ const Header = () => {
   };
 
   const menuItems = [
-    { key: 'features', label: 'Fonctionnalités' },
-    { key: 'how-it-works', label: 'Comment ça marche' },
-    { key: 'testimonials', label: 'Témoignages' },
-    { key: 'download', label: 'Télécharger' }
+    { key: 'features', label: t('features') },
+    { key: 'how-it-works', label: t('howItWorks') },
+    { key: 'testimonials', label: t('testimonials') },
+    { key: 'download', label: t('download') }
   ];
 
   return (
@@ -77,6 +80,8 @@ const Header = () => {
           </nav>
           
           <div className="header-actions">
+            <LanguageSwitcher />
+            
             <Link
               to="download"
               spy={true}
@@ -85,7 +90,7 @@ const Header = () => {
               duration={500}
             >
               <Button type="primary" className="cta-button">
-                Télécharger l'app
+                {t('downloadApp')}
               </Button>
             </Link>
           </div>
@@ -124,6 +129,8 @@ const Header = () => {
           </ul>
           
           <div className="mobile-actions">
+            <LanguageSwitcher />
+            
             <Link
               to="download"
               spy={true}
@@ -133,7 +140,7 @@ const Header = () => {
               onClick={onClose}
             >
               <Button type="primary" block className="mobile-cta-button">
-                Télécharger l'app
+                {t('downloadApp')}
               </Button>
             </Link>
           </div>

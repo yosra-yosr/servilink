@@ -1,0 +1,46 @@
+/* RTL specific styles */
+.rtl {
+    text-align: right;
+  }
+  
+  .rtl .header-container {
+    flex-direction: row-reverse;
+  }
+  
+  .rtl .desktop-menu {
+    flex-direction: row-reverse;
+  }
+  
+  .rtl .header-actions {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  
+  .rtl .nav-list {
+    padding-right: 0;
+  }
+  
+  .rtl .nav-item {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  
+  .rtl .mobile-nav-list {
+    padding-right: 0;
+  }
+  
+  /* Adjust any other direction-sensitive elements */
+  .rtl .feature-item {
+    text-align: right;
+  }
+  
+  .rtl .testimonial-card {
+    text-align: right;
+  }
+  
+  /* Adjust icon directions if needed */
+  .rtl .arrow-icon {
+    transform: scaleX(-1);
+  }
+  
+  /* Add any other RTL specific adjustments here */

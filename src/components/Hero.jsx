@@ -1,14 +1,17 @@
 import React from 'react';
 import { Row, Col, Typography, Button } from 'antd';
 import { AppleOutlined, AndroidOutlined, CheckCircleOutlined } from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
 
 const { Title, Paragraph } = Typography;
 
 const Hero = () => {
+  const { t } = useTranslation(['hero']);
+
   const features = [
-    'Trouvez des prestataires vérifiés près de chez vous',
-    'Réservez en quelques clics',
-    'Paiement sécurisé et transparent'
+    t('features.verified'),
+    t('features.booking'),
+    t('features.payment')
   ];
 
   return (
@@ -22,16 +25,15 @@ const Hero = () => {
         <Row gutter={[48, 48]} align="middle">
           <Col xs={24} md={12} className="hero-content">
             <div className="badge">
-              <span>Nouvelle Application</span>
+              <span>{t('badge')}</span>
             </div>
             
             <Title level={1} className="hero-title">
-              Vos services à domicile <span className="highlight">en un instant</span>
+              {t('title')} <span className="highlight">{t('titleHighlight')}</span>
             </Title>
             
             <Paragraph className="hero-description">
-              ServiLink connecte les prestataires qualifiés avec des clients en quête de solutions professionnelles. 
-              Simple, rapide et fiable pour tous vos besoins quotidiens.
+              {t('description')}
             </Paragraph>
             
             <div className="hero-features">
@@ -46,14 +48,14 @@ const Hero = () => {
             <div className="app-buttons">
               <Button type="primary" icon={<AndroidOutlined />} size="large" className="app-btn android-btn">
                 <div>
-                  <span>TÉLÉCHARGER SUR</span>
-                  <p>Google Play</p>
+                  <span>{t('downloadOn')}</span>
+                  <p>{t('googlePlay')}</p>
                 </div>
               </Button>
               <Button type="primary" icon={<AppleOutlined />} size="large" className="app-btn apple-btn">
                 <div>
-                  <span>TÉLÉCHARGER SUR</span>
-                  <p>App Store</p>
+                  <span>{t('downloadOn')}</span>
+                  <p>{t('appStore')}</p>
                 </div>
               </Button>
             </div>
@@ -63,19 +65,19 @@ const Hero = () => {
                 <Col xs={8}>
                   <div className="stat-item">
                     <div className="stat-value">5000+</div>
-                    <div className="stat-label">Utilisateurs</div>
+                    <div className="stat-label">{t('stats.users')}</div>
                   </div>
                 </Col>
                 <Col xs={8}>
                   <div className="stat-item">
                     <div className="stat-value">1200+</div>
-                    <div className="stat-label">Prestataires</div>
+                    <div className="stat-label">{t('stats.providers')}</div>
                   </div>
                 </Col>
                 <Col xs={8}>
                   <div className="stat-item">
                     <div className="stat-value">4.8/5</div>
-                    <div className="stat-label">Satisfaction</div>
+                    <div className="stat-label">{t('stats.satisfaction')}</div>
                   </div>
                 </Col>
               </Row>
@@ -89,15 +91,15 @@ const Hero = () => {
               </div>
               <div className="floating-element floating-1">
                 <div className="floating-icon">✓</div>
-                <span>Rapide</span>
+                <span>{t('badges.fast')}</span>
               </div>
               <div className="floating-element floating-2">
                 <div className="floating-icon">🔒</div>
-                <span>Sécurisé</span>
+                <span>{t('badges.secure')}</span>
               </div>
               <div className="floating-element floating-3">
                 <div className="floating-icon">⭐</div>
-                <span>Qualitatif</span>
+                <span>{t('badges.quality')}</span>
               </div>
             </div>
           </Col>

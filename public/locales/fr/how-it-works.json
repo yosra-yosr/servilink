@@ -1,0 +1,24 @@
+{
+  "sectionTag": "Processus simple",
+  "title": "Comment",
+  "titleHighlight": "ça marche",
+  "description": "En quelques étapes simples, connectez-vous avec le prestataire idéal pour votre projet.",
+  "steps": [
+    {
+      "title": "Téléchargez l'application",
+      "description": "Installez ServiLink sur votre smartphone et créez votre compte en quelques secondes avec une interface simple et intuitive."
+    },
+    {
+      "title": "Décrivez votre besoin",
+      "description": "Précisez le service dont vous avez besoin, votre localisation et vos disponibilités pour obtenir les meilleures correspondances."
+    },
+    {
+      "title": "Choisissez votre prestataire",
+      "description": "Parcourez les profils, consultez les avis et sélectionnez le prestataire qui correspond parfaitement à vos attentes."
+    },
+    {
+      "title": "Réservez et profitez",
+      "description": "Confirmez la réservation, payez en toute sécurité et bénéficiez du service demandé sans tracas administratifs."
+    }
+  ]
+}

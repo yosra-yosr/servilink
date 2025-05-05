@@ -1,0 +1,19 @@
+{
+    "badge": "Disponible maintenant",
+    "title": "Prêt à simplifier votre recherche de services ?",
+    "description": "Téléchargez ServiLink dès maintenant et connectez-vous avec les meilleurs prestataires de votre région en quelques clics. Rejoignez notre communauté grandissante d'utilisateurs satisfaits.",
+    "benefits": [
+      "Accès à plus de 1200 prestataires vérifiés",
+      "Interface intuitive et facile à utiliser",
+      "Service client disponible 7 jours sur 7",
+      "Mises à jour régulières avec de nouvelles fonctionnalités"
+    ],
+    "downloadOn": "TÉLÉCHARGER SUR",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "badges": {
+      "rating": "4.8/5",
+      "fast": "Rapide",
+      "reliable": "Fiable"
+    }
+}

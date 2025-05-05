@@ -8,59 +8,53 @@ import {
   SafetyOutlined,
   EnvironmentOutlined
 } from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
 
 const { Title, Paragraph } = Typography;
 
 const Features = () => {
-  const features = [
-    {
-      icon: <SearchOutlined className="feature-icon" />,
-      title: 'Recherche intelligente',
-      description: 'Trouvez rapidement le prestataire idéal grâce à notre algorithme de correspondance avancé basé sur vos besoins spécifiques.',
-      color: '#4299e1'
-    },
-    {
-      icon: <StarOutlined className="feature-icon" />,
-      title: 'Évaluations vérifiées',
-      description: 'Consultez les avis et notations des clients précédents pour faire un choix éclairé et en toute confiance.',
-      color: '#f6ad55'
-    },
-    {
-      icon: <CalendarOutlined className="feature-icon" />,
-      title: 'Réservation instantanée',
-      description: 'Prenez rendez-vous directement via l\'application et recevez une confirmation immédiate de votre prestataire.',
-      color: '#68d391'
-    },
-    {
-      icon: <CommentOutlined className="feature-icon" />,
-      title: 'Communication directe',
-      description: 'Discutez en temps réel avec vos prestataires pour clarifier vos besoins et obtenir des devis personnalisés.',
-      color: '#fc8181'
-    },
-    {
-      icon: <SafetyOutlined className="feature-icon" />,
-      title: 'Paiements sécurisés',
-      description: 'Effectuez vos transactions en toute sécurité directement via l\'application avec notre système de paiement protégé.',
-      color: '#b794f4'
-    },
-    {
-      icon: <EnvironmentOutlined className="feature-icon" />,
-      title: 'Géolocalisation',
-      description: 'Découvrez les prestataires disponibles près de chez vous et suivez leur arrivée en temps réel.',
-      color: '#4fd1c5'
-    }
+  const { t } = useTranslation(['features']);
+
+  // Mapping des icônes selon les titres des fonctionnalités
+  const featureIcons = {
+    "Smart Search": <SearchOutlined className="feature-icon" />,
+    "Verified Reviews": <StarOutlined className="feature-icon" />,
+    "Instant Booking": <CalendarOutlined className="feature-icon" />,
+    "Direct Communication": <CommentOutlined className="feature-icon" />,
+    "Secure Payments": <SafetyOutlined className="feature-icon" />,
+    "Geolocation": <EnvironmentOutlined className="feature-icon" />
+  };
+
+  // Couleurs pour les fonctionnalités
+  const featureColors = [
+    '#4299e1',
+    '#f6ad55',
+    '#68d391',
+    '#fc8181',
+    '#b794f4',
+    '#4fd1c5'
   ];
+
+  // Récupération des fonctionnalités depuis la traduction
+  const featuresArray = t('features', { returnObjects: true });
+
+  // Enrichissement des données avec les icônes et couleurs
+  const features = featuresArray.map((feature, index) => ({
+    ...feature,
+    icon: featureIcons[feature.title],
+    color: featureColors[index % featureColors.length]
+  }));
 
   return (
     <section className="features" id="features">
       <div className="container">
         <div className="section-header">
-          <div className="section-tag">Découvrez nos fonctionnalités</div>
+          <div className="section-tag">{t('sectionTag')}</div>
           <Title level={2} className="section-title">
-            Des outils puissants pour <span>simplifier votre quotidien</span>
+            {t('title')} <span>{t('titleHighlight')}</span>
           </Title>
           <Paragraph className="section-description">
-            Découvrez comment ServiLink transforme la façon dont vous trouvez et réservez des services professionnels grâce à des fonctionnalités innovantes.
+            {t('description')}
           </Paragraph>
         </div>
         
@@ -77,7 +71,7 @@ const Features = () => {
                   <h3 className="feature-title">{feature.title}</h3>
                   <p className="feature-description">{feature.description}</p>
                   <a href="https://www.example.com" className="feature-link">
-                    En savoir plus
+                    {t('learnMore')}
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>

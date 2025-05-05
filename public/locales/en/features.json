@@ -1,0 +1,33 @@
+{
+    "sectionTag": "Discover our features",
+    "title": "Powerful tools to",
+    "titleHighlight": "simplify your daily life",
+    "description": "Discover how ServiLink transforms the way you find and book professional services with innovative features.",
+    "learnMore": "Learn more",
+    "features": [
+      {
+        "title": "Smart Search",
+        "description": "Quickly find the ideal provider with our advanced matching algorithm based on your specific needs."
+      },
+      {
+        "title": "Verified Reviews",
+        "description": "View ratings and reviews from previous customers to make an informed choice with confidence."
+      },
+      {
+        "title": "Instant Booking",
+        "description": "Book appointments directly through the app and receive immediate confirmation from your provider."
+      },
+      {
+        "title": "Direct Communication",
+        "description": "Chat in real time with your providers to clarify your needs and get personalized quotes."
+      },
+      {
+        "title": "Secure Payments",
+        "description": "Make your transactions securely directly through the app with our protected payment system."
+      },
+      {
+        "title": "Geolocation",
+        "description": "Discover available providers near you and track their arrival in real time."
+      }
+    ]
+  }

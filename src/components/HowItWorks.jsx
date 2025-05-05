@@ -6,47 +6,49 @@ import {
   UserSwitchOutlined, 
   CheckCircleOutlined 
 } from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
 
 const { Title, Paragraph } = Typography;
 
 const HowItWorks = () => {
-  const steps = [
-    {
-      icon: <DownloadOutlined />,
-      title: 'Téléchargez l\'application',
-      description: 'Installez ServiLink sur votre smartphone et créez votre compte en quelques secondes avec une interface simple et intuitive.',
-      color: '#4299e1'
-    },
-    {
-      icon: <FormOutlined />,
-      title: 'Décrivez votre besoin',
-      description: 'Précisez le service dont vous avez besoin, votre localisation et vos disponibilités pour obtenir les meilleures correspondances.',
-      color: '#f6ad55'
-    },
-    {
-      icon: <UserSwitchOutlined />,
-      title: 'Choisissez votre prestataire',
-      description: 'Parcourez les profils, consultez les avis et sélectionnez le prestataire qui correspond parfaitement à vos attentes.',
-      color: '#68d391'
-    },
-    {
-      icon: <CheckCircleOutlined />,
-      title: 'Réservez et profitez',
-      description: 'Confirmez la réservation, payez en toute sécurité et bénéficiez du service demandé sans tracas administratifs.',
-      color: '#fc8181'
-    }
+  const { t } = useTranslation(['how-it-works']);
+
+  // Icons pour les différentes étapes
+  const stepIcons = [
+    <DownloadOutlined />,
+    <FormOutlined />,
+    <UserSwitchOutlined />,
+    <CheckCircleOutlined />
   ];
+
+  // Couleurs pour les différentes étapes
+  const stepColors = [
+    '#4299e1',
+    '#f6ad55',
+    '#68d391',
+    '#fc8181'
+  ];
+
+  // Récupération des étapes depuis la traduction
+  const stepsArray = t('steps', { returnObjects: true });
+
+  // Enrichissement des données avec les icônes et couleurs
+  const steps = stepsArray.map((step, index) => ({
+    ...step,
+    icon: stepIcons[index % stepIcons.length],
+    color: stepColors[index % stepColors.length]
+  }));
 
   return (
     <section className="how-it-works" id="how-it-works">
       <div className="container">
         <div className="section-header">
-          <div className="section-tag">Processus simple</div>
+          <div className="section-tag">{t('sectionTag')}</div>
           <Title level={2} className="section-title">
-            Comment <span>ça marche</span>
+            {t('title')} <span>{t('titleHighlight')}</span>
           </Title>
           <Paragraph className="section-description">
-            En quelques étapes simples, connectez-vous avec le prestataire idéal pour votre projet.
+            {t('description')}
           </Paragraph>
         </div>
         

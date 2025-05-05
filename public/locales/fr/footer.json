@@ -1,0 +1,33 @@
+{
+    "description": "Connectez-vous aux meilleurs prestataires de services pour tous vos besoins quotidiens. Notre plateforme innovante révolutionne la façon de trouver des professionnels qualifiés.",
+    "about": "À propos",
+    "resources": "Ressources",
+    "contact": "Contact",
+    "legal": "Légal",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "developedWith": "Développé avec",
+    "by": "par",
+    "allRightsReserved": "Tous droits réservés",
+    "aboutLinks": {
+      "ourStory": "Notre histoire",
+      "ourTeam": "Notre équipe",
+      "careers": "Carrières",
+      "news": "Actualités"
+    },
+    "resourceLinks": {
+      "helpCenter": "Centre d'aide",
+      "tutorials": "Tutoriels",
+      "blog": "Blog",
+      "faq": "FAQ"
+    },
+    "legalLinks": {
+      "termsOfUse": "Conditions d'utilisation",
+      "privacyPolicy": "Politique de confidentialité",
+      "legalNotice": "Mentions légales",
+      "cookies": "Cookies"
+    },
+    "contactInfo": {
+      "address": "Pépinière des entreprises, Rue de jérusalem Radès"
+    }
+  }

@@ -1,0 +1,24 @@
+{
+    "badge": "New App",
+    "title": "Your home services",
+    "titleHighlight": "in an instant",
+    "description": "ServiLink connects qualified service providers with clients seeking professional solutions. Simple, fast and reliable for all your daily needs.",
+    "features": {
+      "verified": "Find verified providers near you",
+      "booking": "Book in a few clicks",
+      "payment": "Secure and transparent payment"
+    },
+    "downloadOn": "DOWNLOAD ON",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "stats": {
+      "users": "Users",
+      "providers": "Providers",
+      "satisfaction": "Satisfaction"
+    },
+    "badges": {
+      "fast": "Fast",
+      "secure": "Secure",
+      "quality": "Quality"
+    }
+  }
