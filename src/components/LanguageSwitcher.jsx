@@ -1,6 +1,5 @@
 import React from 'react';
 import { Select } from 'antd';
-import { GlobalOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 
 const LanguageSwitcher = () => {
@@ -20,25 +19,25 @@ const LanguageSwitcher = () => {
         onChange={changeLanguage}
         dropdownMatchSelectWidth={false}
         bordered={false}
-        suffixIcon={<GlobalOutlined />}
         optionLabelProp="label"
+        popupClassName="language-dropdown"
       >
-        <Select.Option value="fr" label="FR">
+        <Select.Option value="fr" label={<span className="selected-language"><span className="flag-circle flag-circle-fr"></span>FR</span>}>
           <div className="language-option">
-            <span className="flag-icon">🇫🇷</span>
-            <span>Français</span>
+            <span className="flag-circle flag-circle-fr"></span>
+            <span className="language-name">Français</span>
           </div>
         </Select.Option>
-        <Select.Option value="en" label="EN">
+        <Select.Option value="en" label={<span className="selected-language"><span className="flag-circle flag-circle-us"></span>EN</span>}>
           <div className="language-option">
-            <span className="flag-icon">🇬🇧</span>
-            <span>English</span>
+            <span className="flag-circle flag-circle-us"></span>
+            <span className="language-name">English</span>
           </div>
         </Select.Option>
-        <Select.Option value="ar" label="AR">
+        <Select.Option value="ar" label={<span className="selected-language"><span className="flag-circle flag-circle-tn"></span>AR</span>}>
           <div className="language-option">
-            <span className="flag-icon">🇹🇳</span>
-            <span>العربية</span>
+            <span className="flag-circle flag-circle-tn"></span>
+            <span className="language-name">العربية</span>
           </div>
         </Select.Option>
       </Select>
