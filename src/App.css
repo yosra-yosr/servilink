@@ -818,13 +818,13 @@ h1, h2, h3, h4, h5, h6, .ant-typography, .ant-btn {
 }
 
 .mobile-cta-button {
-  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  background: linear-gradient(135deg, #1e4b82, #2d6cb3);
   height: auto;
   padding: 14px 0;
   border-radius: 30px;
   font-weight: 600;
   text-transform: uppercase;
-  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 5px 15px rgba(30, 75, 130, 0.3);
   border: none;
   transition: all 0.3s ease;
   font-size: 0.95rem;
@@ -841,7 +841,7 @@ h1, h2, h3, h4, h5, h6, .ant-typography, .ant-btn {
   left: 0;
   width: 0;
   height: 100%;
-  background: linear-gradient(135deg, #1d4ed8, #4338ca);
+  background: linear-gradient(135deg, #163c69, #3a80ce);
   transition: all 0.4s ease-in-out;
   z-index: -1;
   border-radius: 30px;
@@ -1658,6 +1658,7 @@ h1, h2, h3, h4, h5, h6, .ant-typography, .ant-btn {
 .floating-element {
   position: absolute;
   background: white;
+  color: #000000;
   border-radius: 15px;
   padding: 10px 15px;
   display: flex;
@@ -1901,7 +1902,7 @@ h1, h2, h3, h4, h5, h6, .ant-typography, .ant-btn {
 }
 
 .download-phone-mockup {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(30, 75, 130, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 40px;
   padding: 10px;
@@ -2085,3 +2086,4 @@ h1, h2, h3, h4, h5, h6, .ant-typography, .ant-btn {
     display: none;
   }
 }
+

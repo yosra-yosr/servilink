@@ -84,7 +84,7 @@ const Hero = () => {
             </div>
           </Col>
           
-          <Col xs={24} md={12} className="hero-image-container">
+          {/* <Col xs={24} md={12} className="hero-image-container">
             <div className="phone-mockup">
               <div className="phone-frame">
                 <img src="/images/SplashScreen.png" alt="ServiLink App" className="phone-screen" />
@@ -101,6 +101,29 @@ const Hero = () => {
                 <div className="floating-icon">⭐</div>
                 <span>{t('badges.quality')}</span>
               </div>
+            </div>
+          </Col> */}
+          <Col xs={24} lg={12} className="download-image-col">
+            <div className="download-image-container">
+              <div className="download-phone-mockup">
+                <img src="/images/SplashScreen.png" alt="ServiLink App" className="download-phone" />
+              </div>
+              <div className="download-phone-mockup download-phone-second">
+                <img src="/images/SplashScreen.png" alt="ServiLink App" className="download-phone" />
+              </div>
+              
+              <div className="floating-element floating-1">
+                          <div className="floating-icon">✓</div>
+                          <span>{t('badges.fast')}</span>
+                        </div>
+                        <div className="floating-element floating-2">
+                          <div className="floating-icon">🔒</div>
+                          <span>{t('badges.secure')}</span>
+                        </div>
+                        <div className="floating-element floating-3">
+                          <div className="floating-icon">⭐</div>
+                          <span>{t('badges.quality')}</span>
+                        </div>
             </div>
           </Col>
         </Row>

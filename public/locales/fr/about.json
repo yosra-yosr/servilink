@@ -1,0 +1,50 @@
+{
+    "title": "À propos de ServiLink",
+    "subtitle": "Découvrez notre histoire et notre mission pour révolutionner les services à domicile",
+    
+    "company": {
+      "title": "ServiLink: Connecter les personnes aux meilleurs services",
+      "description": "ServiLink est une entreprise innovante qui facilite la mise en relation entre les prestataires de services qualifiés et les clients à la recherche de services à domicile de qualité. Notre plateforme mobile rend le processus de recherche, de réservation et de paiement des services plus simple, plus sûr et plus transparent.",
+      "mission": "Notre mission est de créer un écosystème de services où chacun peut trouver facilement le bon prestataire pour ses besoins, tout en offrant aux professionnels une plateforme pour développer leur activité et atteindre de nouveaux clients."
+    },
+    
+    "stats": {
+      "year": "2023",
+      "founded": "Année de création",
+      "services": "50+",
+      "offered": "Services proposés",
+      "cities": "15+",
+      "presence": "Villes couvertes"
+    },
+    
+    "values": {
+      "title": "Nos valeurs fondamentales",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Nous repoussons constamment les limites pour rendre l'accès aux services plus simple et plus efficace."
+      },
+      "community": {
+        "title": "Communauté",
+        "description": "Nous créons des liens durables entre prestataires et clients pour bâtir un réseau de confiance."
+      },
+      "trust": {
+        "title": "Confiance",
+        "description": "Nous vérifions rigoureusement chaque prestataire pour garantir qualité et sécurité à nos utilisateurs."
+      },
+      "quality": {
+        "title": "Qualité",
+        "description": "Nous nous engageons à offrir une expérience utilisateur exceptionnelle et des services de premier ordre."
+      }
+    },
+    
+    "app": {
+      "title": "L'application ServiLink",
+      "description": "Notre application mobile ServiLink est le cœur de notre écosystème. Elle permet aux utilisateurs de rechercher, comparer et réserver des services en quelques clics, tout en donnant aux prestataires les outils pour gérer efficacement leur activité.",
+      "features": {
+        "easy": "Interface intuitive et facile à utiliser",
+        "secure": "Paiements sécurisés et système de notation transparent",
+        "fast": "Réservation rapide et confirmation instantanée",
+        "support": "Support client disponible 7j/7"
+      }
+    }
+  }

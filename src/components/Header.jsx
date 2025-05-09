@@ -20,6 +20,7 @@ const Header = () => {
       }
       
       // Mise à jour du lien actif basé sur la position du scroll
+      // const sections = ['hero', 'about', 'features', 'how-it-works', 'testimonials', 'download'];
       const sections = ['hero', 'features', 'how-it-works', 'testimonials', 'download'];
       const scrollPosition = window.scrollY + 100;
       
@@ -45,10 +46,10 @@ const Header = () => {
   };
 
   const menuItems = [
+    // { key: 'about', label: t('about') },
     { key: 'features', label: t('features') },
     { key: 'how-it-works', label: t('howItWorks') },
     { key: 'testimonials', label: t('testimonials') },
-    { key: 'download', label: t('download') }
   ];
 
   return (
@@ -139,7 +140,7 @@ const Header = () => {
               duration={500}
               onClick={onClose}
             >
-              <Button type="primary" block className="mobile-cta-button">
+              <Button block className="mobile-cta-button">
                 {t('downloadApp')}
               </Button>
             </Link>

@@ -69,7 +69,7 @@ const Download = () => {
             </div>
           </Col>
           
-          <Col xs={24} lg={12} className="download-image-col">
+          {/* <Col xs={24} lg={12} className="download-image-col">
             <div className="download-image-container">
               <div className="download-phone-mockup">
                 <img src="/images/SplashScreen.png" alt="ServiLink App" className="download-phone" />
@@ -90,7 +90,26 @@ const Download = () => {
                 <span>{t('badges.reliable')}</span>
               </div>
             </div>
-          </Col>
+          </Col> */}
+           <Col xs={24} md={12} className="hero-image-container">
+                      <div className="phone-mockup">
+                        <div className="phone-frame">
+                          <img src="/images/QrCode.png" alt="ServiLink App" className="phone-screen" />
+                        </div>
+                        <div className="download-badge-floating download-badge-1">
+                <div className="download-badge-icon">⭐</div>
+                <span>{t('badges.rating')}</span>
+              </div>
+              <div className="download-badge-floating download-badge-2">
+                <div className="download-badge-icon">🚀</div>
+                <span>{t('badges.fast')}</span>
+              </div>
+              <div className="download-badge-floating download-badge-3">
+                <div className="download-badge-icon">👍</div>
+                <span>{t('badges.reliable')}</span>
+              </div>
+                      </div>
+                    </Col>
         </Row>
       </div>
     </section>
