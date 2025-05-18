@@ -43,29 +43,38 @@ const Download = () => {
               </div>
               
               <div className="download-buttons">
-                <Button 
-                  type="primary" 
-                  icon={<AndroidOutlined />} 
-                  size="large" 
-                  className="download-btn android-btn"
-                >
-                  <div>
-                    <span>{t('downloadOn')}</span>
-                    <p>{t('googlePlay')}</p>
-                  </div>
-                </Button>
-                <Button 
-                  type="primary" 
-                  icon={<AppleOutlined />} 
-                  size="large" 
-                  className="download-btn apple-btn"
-                >
-                  <div>
-                    <span>{t('downloadOn')}</span>
-                    <p>{t('appStore')}</p>
-                  </div>
-                </Button>
+
+                <a href="https://www.figma.com/proto/O0lbzwDv6XSC0AGCTdcgv8/ServiLink?node-id=297-4370&t=meUHn0JZPiXhhDYV-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=297%3A4370" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                  <Button 
+                    type="primary" 
+                    icon={<AndroidOutlined />} 
+                    size="large" 
+                    className="download-btn android-btn"
+                  >
+                    <div>
+                      <span>{t('downloadOn')}</span>
+                      <p>{t('googlePlay')}</p>
+                    </div>
+                  </Button>
+                </a>
+
+                <a href="https://www.figma.com/proto/O0lbzwDv6XSC0AGCTdcgv8/ServiLink?node-id=297-4370&t=meUHn0JZPiXhhDYV-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=297%3A4370" target="_blank" rel="noopener noreferrer">
+                  <Button 
+                    type="primary" 
+                    icon={<AppleOutlined />} 
+                    size="large" 
+                    className="download-btn apple-btn"
+                  >
+                    <div>
+                      <span>{t('downloadOn')}</span>
+                      <p>{t('appStore')}</p>
+                    </div>
+                  </Button>
+                </a>
               </div>
+              
             </div>
           </Col>
           
@@ -94,7 +103,7 @@ const Download = () => {
            <Col xs={24} md={12} className="hero-image-container">
                       <div className="phone-mockup">
                         <div className="phone-frame">
-                          <img src="/images/QrCode.png" alt="ServiLink App" className="phone-screen" />
+                          <img src="/images/downloadPrototype.png" alt="ServiLink App" className="phone-screen" />
                         </div>
                         <div className="download-badge-floating download-badge-1">
                 <div className="download-badge-icon">⭐</div>

@@ -133,12 +133,16 @@ const Footer = () => {
               </div>
             </Col>
             <Col xs={24} sm={12} className="download-btns">
+            <a href="https://www.figma.com/proto/O0lbzwDv6XSC0AGCTdcgv8/ServiLink?node-id=297-4370&t=meUHn0JZPiXhhDYV-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=297%3A4370" target="_blank" rel="noopener noreferrer">
               <Button className="app-store-btn">
                 {t('appStore')}
               </Button>
+              </a>
+            <a href="https://www.figma.com/proto/O0lbzwDv6XSC0AGCTdcgv8/ServiLink?node-id=297-4370&t=meUHn0JZPiXhhDYV-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=297%3A4370" target="_blank" rel="noopener noreferrer">
               <Button className="play-store-btn">
                 {t('googlePlay')}
               </Button>
+            </a>
             </Col>
           </Row>
         </div>

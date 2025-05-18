@@ -46,18 +46,22 @@ const Hero = () => {
             </div>
             
             <div className="app-buttons">
+              <a href="https://www.figma.com/proto/O0lbzwDv6XSC0AGCTdcgv8/ServiLink?node-id=297-4370&t=meUHn0JZPiXhhDYV-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=297%3A4370" target="_blank" rel="noopener noreferrer">
               <Button type="primary" icon={<AndroidOutlined />} size="large" className="app-btn android-btn">
                 <div>
                   <span>{t('downloadOn')}</span>
                   <p>{t('googlePlay')}</p>
                 </div>
               </Button>
+              </a>
+              <a href="https://www.figma.com/proto/O0lbzwDv6XSC0AGCTdcgv8/ServiLink?node-id=297-4370&t=meUHn0JZPiXhhDYV-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=297%3A4370" target="_blank" rel="noopener noreferrer">
               <Button type="primary" icon={<AppleOutlined />} size="large" className="app-btn apple-btn">
                 <div>
                   <span>{t('downloadOn')}</span>
                   <p>{t('appStore')}</p>
                 </div>
               </Button>
+              </a>
             </div>
             
             <div className="stats-container">
