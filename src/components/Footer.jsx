@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Row, Col, Typography, List, Button, } from 'antd';
+import { Layout, Row, Col, Typography, List, Button } from 'antd';
 import { 
   FacebookOutlined, 
   InstagramOutlined, 
@@ -16,7 +16,8 @@ const { Title, Paragraph } = Typography;
 const { Footer: AntFooter } = Layout;
 
 const Footer = () => {
-  const { t } = useTranslation(['footer']);
+  const { t, i18n } = useTranslation(['footer']);
+  const isRTL = i18n.language === 'ar';
 
   const aboutLinks = [
     { title: t('aboutLinks.ourStory'), href: '#' },
@@ -41,7 +42,7 @@ const Footer = () => {
 
   const contactInfo = [
     { icon: <MailOutlined />, text: 'servilink6@gmail.com', href: 'mailto:servilink6@gmail.com' },
-    { icon: <PhoneOutlined />, text: '+216 24 372 697', href: 'tel:+21624372697' },
+    { icon: <PhoneOutlined />, text: '+216 24 372 697', href: 'tel:+21624372697', forceDirection: true },
     { icon: <EnvironmentOutlined />, text: t('contactInfo.address'), href: 'https://maps.google.com' },
   ];
 
@@ -58,6 +59,17 @@ const Footer = () => {
                 <Paragraph className="footer-description">
                   {t('description')}
                 </Paragraph>
+                <div className="social-links">
+                  <a href="https://www.facebook.com/groups/8221537984615978" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <FacebookOutlined />
+                  </a>
+                  <a href="https://www.instagram.com/servilink_2024?igsh=MWM0MHU0cWlkaHg4eA==" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <InstagramOutlined />
+                  </a>
+                  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <LinkedinOutlined />
+                  </a>
+                </div>
               </div>
             </Col>
             
@@ -69,8 +81,9 @@ const Footer = () => {
                     dataSource={aboutLinks}
                     renderItem={item => (
                       <List.Item className="footer-list-item">
-                        <RightOutlined className="footer-link-icon" />
+                        {!isRTL && <RightOutlined className="footer-link-icon" />}
                         <a href={item.href}>{item.title}</a>
+                        {isRTL && <RightOutlined className="footer-link-icon-rtl" />}
                       </List.Item>
                     )}
                   />
@@ -82,8 +95,9 @@ const Footer = () => {
                     dataSource={resourceLinks}
                     renderItem={item => (
                       <List.Item className="footer-list-item">
-                        <RightOutlined className="footer-link-icon" />
+                        {!isRTL && <RightOutlined className="footer-link-icon" />}
                         <a href={item.href}>{item.title}</a>
+                        {isRTL && <RightOutlined className="footer-link-icon-rtl" />}
                       </List.Item>
                     )}
                   />
@@ -96,21 +110,14 @@ const Footer = () => {
                     renderItem={item => (
                       <List.Item className="footer-contact-item">
                         <span className="contact-icon">{item.icon}</span>
-                        <a href={item.href}>{item.text}</a>
+                        {item.forceDirection ? (
+                          <a href={item.href} dir="ltr" className="phone-number">{item.text}</a>
+                        ) : (
+                          <a href={item.href}>{item.text}</a>
+                        )}
                       </List.Item>
                     )}
                   />
-                  <div className="social-links">
-                    <a href="https://www.facebook.com/groups/8221537984615978" target="_blank" rel="noopener noreferrer" className="social-link">
-                      <FacebookOutlined />
-                    </a>
-                    <a href="https://www.instagram.com/servilink_2024?igsh=MWM0MHU0cWlkaHg4eA==" target="_blank" rel="noopener noreferrer" className="social-link">
-                      <InstagramOutlined />
-                    </a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
-                      <LinkedinOutlined />
-                    </a>
-                  </div>
                 </Col>
               </Row>
             </Col>
@@ -120,8 +127,8 @@ const Footer = () => {
       
       <div className="footer-middle">
         <div className="container">
-          <Row justify="space-between" align="middle">
-            <Col xs={24} sm={12}>
+          <Row justify="space-between" align="middle" gutter={[0, 24]}>
+            <Col xs={24} sm={12} md={12}>
               <Title level={4} className="legal-title">{t('legal')}</Title>
               <div className="legal-links">
                 {legalLinks.map((link, index) => (
@@ -132,17 +139,17 @@ const Footer = () => {
                 ))}
               </div>
             </Col>
-            <Col xs={24} sm={12} className="download-btns">
-            <a href="https://www.figma.com/proto/O0lbzwDv6XSC0AGCTdcgv8/ServiLink?node-id=297-4370&t=meUHn0JZPiXhhDYV-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=297%3A4370" target="_blank" rel="noopener noreferrer">
-              <Button className="app-store-btn">
-                {t('appStore')}
-              </Button>
+            <Col xs={24} sm={12} md={12} className="download-btns">
+              <a href="https://www.figma.com/proto/O0lbzwDv6XSC0AGCTdcgv8/ServiLink?node-id=297-4370&t=meUHn0JZPiXhhDYV-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=297%3A4370" target="_blank" rel="noopener noreferrer">
+                <Button className="app-store-btn">
+                  {t('appStore')}
+                </Button>
               </a>
-            <a href="https://www.figma.com/proto/O0lbzwDv6XSC0AGCTdcgv8/ServiLink?node-id=297-4370&t=meUHn0JZPiXhhDYV-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=297%3A4370" target="_blank" rel="noopener noreferrer">
-              <Button className="play-store-btn">
-                {t('googlePlay')}
-              </Button>
-            </a>
+              <a href="https://www.figma.com/proto/O0lbzwDv6XSC0AGCTdcgv8/ServiLink?node-id=297-4370&t=meUHn0JZPiXhhDYV-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=297%3A4370" target="_blank" rel="noopener noreferrer">
+                <Button className="play-store-btn">
+                  {t('googlePlay')}
+                </Button>
+              </a>
             </Col>
           </Row>
         </div>
@@ -151,7 +158,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container">
           <Paragraph className="copyright">
-            &copy; 2025 ServiLink. {t('developedWith')} <HeartOutlined /> {t('by')} Zoug Yosra. {t('allRightsReserved')}.
+            &copy; 2025 ServiLink. {t('developedWith')} <HeartOutlined className="heart-icon" /> {t('by')} Zoug Yosra. {t('allRightsReserved')}.
           </Paragraph>
         </div>
       </div>
