@@ -11,9 +11,79 @@ const SEOHead = ({ title, description, keywords, image }) => {
 
   const siteTitle = 'ServiLink';
   const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle;
-  const metaDescription = description || 'Connectez-vous aux meilleurs professionnels de services locaux';
-  const metaKeywords = keywords || 'services locaux, professionnels, réservation, ServiLink';
+  
+  // Description enrichie avec mots-clés naturels
+  const metaDescription = description || 'Trouvez et réservez les meilleurs professionnels de services locaux : plombiers, électriciens, chauffagistes, artisans qualifiés. Service rapide, devis gratuit, intervention d\'urgence disponible.';
+  
+  // Mots-clés enrichis basés sur les services principaux
+  const defaultKeywords = [
+    // Services principaux
+    'plombier pas cher',
+    'chauffagiste autour de moi',
+    'plomberie rive sud',
+    'sos plomberie',
+    'plombier d\'urgence',
+    'plombier autour de moi',
+    'électricien',
+    'electrician',
+    'residential electrician',
+    'electricians',
+    'journeyman electrician',
+    'licensed electrician',
+    
+    // Services généraux
+    'services locaux',
+    'professionnels qualifiés',
+    'artisans certifiés',
+    'réservation en ligne',
+    'devis gratuit',
+    'intervention rapide',
+    'service à domicile',
+    'dépannage urgent',
+    'réparation',
+    'installation',
+    'maintenance',
+    
+    // Localisation
+    'services près de moi',
+    'professionnels à proximité',
+    'artisans locaux',
+    
+    // Marque
+    'ServiLink',
+    'plateforme de services',
+    'mise en relation professionnels'
+  ];
+  
+  const metaKeywords = keywords || defaultKeywords.join(', ');
   const metaImage = image || defaultImage;
+
+  // Schema.org structured data pour améliorer le SEO
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ServiLink",
+    "url": currentUrl,
+    "description": metaDescription,
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://servi-link.netlify.app/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+  const organizationData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ServiLink",
+    "url": "https://servi-link.netlify.app",
+    "logo": defaultImage,
+    "description": metaDescription,
+    "sameAs": []
+  };
 
   return (
     <Helmet>
@@ -23,8 +93,12 @@ const SEOHead = ({ title, description, keywords, image }) => {
       <meta name="description" content={metaDescription} />
       <meta name="keywords" content={metaKeywords} />
       <meta name="author" content="Gamgam Amine" />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href={currentUrl} />
+
+      {/* Geographic Meta Tags */}
+      <meta name="geo.region" content="TN" />
+      <meta name="geo.placename" content="Tunisia" />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
@@ -32,6 +106,8 @@ const SEOHead = ({ title, description, keywords, image }) => {
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={metaDescription} />
       <meta property="og:image" content={metaImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="og:site_name" content="ServiLink" />
       <meta property="og:locale" content={i18n.language === 'fr' ? 'fr_FR' : i18n.language === 'ar' ? 'ar_AR' : 'en_US'} />
 
@@ -56,6 +132,20 @@ const SEOHead = ({ title, description, keywords, image }) => {
 
       {/* Theme Color */}
       <meta name="theme-color" content="#4299e1" />
+
+      {/* Additional SEO Meta Tags */}
+      <meta name="rating" content="general" />
+      <meta name="revisit-after" content="7 days" />
+      <meta name="distribution" content="global" />
+      <meta name="language" content={i18n.language} />
+
+      {/* Structured Data - JSON-LD */}
+      <script type="application/ld+json">
+        {JSON.stringify(structuredData)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(organizationData)}
+      </script>
     </Helmet>
   );
 };
