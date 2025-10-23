@@ -24,4 +24,4 @@ Allow: /
 # Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://servilink.netlify.app/sitemap.xml
+Sitemap: https://servi-link.netlify.app/sitemap.xml
