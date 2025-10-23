@@ -158,7 +158,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container">
           <Paragraph className="copyright">
-            &copy; 2025 ServiLink. {t('developedWith')} <HeartOutlined className="heart-icon" /> {t('by')} Zoug Yosra. {t('allRightsReserved')}.
+            &copy; 2025 ServiLink. {t('developedWith')} <HeartOutlined className="heart-icon" /> {t('by')} Gamgam Amine. {t('allRightsReserved')}.
           </Paragraph>
         </div>
       </div>

@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 
 const { Title, Paragraph } = Typography;
 
-const HowItWorks = () => {
+const HowItWorks = ({ isDedicatedPage = false }) => {
   const { t } = useTranslation(['how-it-works']);
 
   // Icons pour les différentes étapes
@@ -38,9 +38,9 @@ const HowItWorks = () => {
     icon: stepIcons[index % stepIcons.length],
     color: stepColors[index % stepColors.length]
   }));
-
+const sectionId = isDedicatedPage ? undefined : "how-it-works";
   return (
-    <section className="how-it-works" id="how-it-works">
+    <section className="how-it-works" id={sectionId}>
       <div className="container">
         <div className="section-header">
           <div className="section-tag">{t('sectionTag')}</div>

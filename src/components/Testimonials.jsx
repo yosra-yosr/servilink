@@ -5,14 +5,14 @@ import { useTranslation } from 'react-i18next';
 
 const { Title, Paragraph } = Typography;
 
-const Testimonials = () => {
+const Testimonials = ({ isDedicatedPage = false }) => {
   const { t } = useTranslation(['testimonials']);
 
   // Récupération des témoignages depuis la traduction
   const testimonials = t('testimonials', { returnObjects: true });
-
+const sectionId = isDedicatedPage ? undefined : "how-it-works";
   return (
-    <section className="testimonials" id="testimonials">
+    <section className="testimonials" id={sectionId}>
       <div className="container">
         <div className="section-header">
           <div className="section-tag">{t('sectionTag')}</div>

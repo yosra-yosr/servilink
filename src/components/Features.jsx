@@ -12,7 +12,7 @@ import { useTranslation } from 'react-i18next';
 
 const { Title, Paragraph } = Typography;
 
-const Features = () => {
+const Features = ({ isDedicatedPage = false }) => {
   const { t } = useTranslation(['features']);
 
   // Mapping des icônes selon les titres des fonctionnalités
@@ -44,9 +44,9 @@ const Features = () => {
     icon: featureIcons[feature.title],
     color: featureColors[index % featureColors.length]
   }));
-
+const sectionId = isDedicatedPage ? undefined : "features";
   return (
-    <section className="features" id="features">
+    <section className="features" id={sectionId}>
       <div className="container">
         <div className="section-header">
           <div className="section-tag">{t('sectionTag')}</div>
