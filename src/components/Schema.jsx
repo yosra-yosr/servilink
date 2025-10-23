@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom';
 const Schema = () => {
   const { i18n } = useTranslation(['common']);
   const location = useLocation();
-  const currentUrl = `https://servilink.netlify.app${location.pathname}`;
+  const currentUrl = `https://servi-link.netlify.app${location.pathname}`;
   const language = i18n.language;
 
   // Schema Organization
@@ -15,8 +15,8 @@ const Schema = () => {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "ServiLink",
-    "url": "https://servilink.netlify.app",
-    "logo": "https://servilink.netlify.app/images/logo.png",
+    "url": "https://servi-link.netlify.app",
+    "logo": "https://servi-link.netlify.app/images/logo.png",
     "description": "ServiLink - Connectez-vous aux meilleurs professionnels de services locaux",
     "address": {
       "@type": "PostalAddress",
@@ -59,7 +59,7 @@ const Schema = () => {
       "priceCurrency": "USD"
     },
     "description": "Trouvez et réservez des professionnels de services locaux en quelques clics",
-    "screenshot": "https://servilink.netlify.app/images/SplashScreen.png"
+    "screenshot": "https://servi-link.netlify.app/images/SplashScreen.png"
   };
 
   // Schema WebSite
@@ -67,12 +67,12 @@ const Schema = () => {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "ServiLink",
-    "url": "https://servilink.netlify.app",
+    "url": "https://servi-link.netlify.app",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://servilink.netlify.app/search?q={search_term_string}"
+        "urlTemplate": "https://servi-link.netlify.app/search?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     },
@@ -88,7 +88,7 @@ const Schema = () => {
       "inLanguage": language,
       "isPartOf": {
         "@type": "WebSite",
-        "url": "https://servilink.netlify.app"
+        "url": "https://servi-link.netlify.app"
       }
     };
 
@@ -133,7 +133,7 @@ const Schema = () => {
           "@type": "ListItem",
           "position": 1,
           "name": "Accueil",
-          "item": "https://servilink.netlify.app"
+          "item": "https://servi-link.netlify.app"
         }
       ]
     };
@@ -143,7 +143,7 @@ const Schema = () => {
         "@type": "ListItem",
         "position": index + 2,
         "name": segment.charAt(0).toUpperCase() + segment.slice(1),
-        "item": `https://servilink.netlify.app/${pathSegments.slice(0, index + 1).join('/')}`
+        "item": `https://servi-link.netlify.app/${pathSegments.slice(0, index + 1).join('/')}`
       });
     });
 
