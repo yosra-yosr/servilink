@@ -3,8 +3,9 @@ import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
 
-const SchemaOrg = () => {
-  const { t, i18n } = useTranslation(['common']);
+
+const Schema = () => {
+  const { i18n } = useTranslation(['common']);
   const location = useLocation();
   const currentUrl = `https://servilink.netlify.app${location.pathname}`;
   const language = i18n.language;
@@ -181,4 +182,4 @@ const SchemaOrg = () => {
   );
 };
 
-export default SchemaOrg;
+export default Schema;

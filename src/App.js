@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { HelmetProvider } from 'react-helmet-async';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import SchemaOrg from './components/SchemaOrg';
+import Schema from './components/Schema';
 import './App.css';
 
 
@@ -50,7 +50,7 @@ const App = () => {
     <HelmetProvider>
       <ConfigProvider locale={getAntLocale()} direction={direction}>
         <Router>
-          <SchemaOrg />
+          <Schema />
           <Layout className={`layout ${direction}-layout`}>
             <Header />
             <Layout.Content>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col, Typography, Rate, Avatar } from 'antd';
 import { FacebookOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
-
+import SEOHead from './SEOHead';
 const { Title, Paragraph } = Typography;
 
 const Testimonials = ({ isDedicatedPage = false }) => {
