@@ -6,8 +6,8 @@ import { useLocation } from 'react-router-dom';
 const SEOHead = ({ title, description, keywords, image }) => {
   const { i18n } = useTranslation();
   const location = useLocation();
-  const currentUrl = `https://servilink.netlify.app${location.pathname}`;
-  const defaultImage = 'https://servilink.netlify.app/images/logo.png';
+  const currentUrl = `https://servi-link.netlify.app${location.pathname}`;
+  const defaultImage = 'https://servi-link.netlify.app/images/logo.png';
 
   const siteTitle = 'ServiLink';
   const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle;
@@ -43,10 +43,10 @@ const SEOHead = ({ title, description, keywords, image }) => {
       <meta name="twitter:image" content={metaImage} />
 
       {/* Alternate Language Links */}
-      <link rel="alternate" hreflang="fr" href={`https://servilink.netlify.app${location.pathname}`} />
-      <link rel="alternate" hreflang="en" href={`https://servilink.netlify.app${location.pathname}`} />
-      <link rel="alternate" hreflang="ar" href={`https://servilink.netlify.app${location.pathname}`} />
-      <link rel="alternate" hreflang="x-default" href={`https://servilink.netlify.app${location.pathname}`} />
+      <link rel="alternate" hreflang="fr" href={`https://servi-link.netlify.app${location.pathname}`} />
+      <link rel="alternate" hreflang="en" href={`https://servi-link.netlify.app${location.pathname}`} />
+      <link rel="alternate" hreflang="ar" href={`https://servi-link.netlify.app${location.pathname}`} />
+      <link rel="alternate" hreflang="x-default" href={`https://servi-link.netlify.app${location.pathname}`} />
 
       {/* Mobile Web App */}
       <meta name="mobile-web-app-capable" content="yes" />
