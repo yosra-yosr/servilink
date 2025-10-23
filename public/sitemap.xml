@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
+<urlset 
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <!-- Page d'accueil -->
   <url>
     <loc>https://servi-link.netlify.app/</loc>
@@ -9,8 +10,8 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://servi-link.netlify.app/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://servi-link.netlify.app/" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://servi-link.netlify.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://servi-link.netlify.app/en/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://servi-link.netlify.app/ar/" />
   </url>
 
   <!-- Page Features -->
@@ -20,8 +21,8 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://servi-link.netlify.app/features" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://servi-link.netlify.app/features" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://servi-link.netlify.app/features" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://servi-link.netlify.app/en/features" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://servi-link.netlify.app/ar/features" />
   </url>
 
   <!-- Page How It Works -->
@@ -31,8 +32,8 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://servi-link.netlify.app/how-it-works" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://servi-link.netlify.app/how-it-works" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://servi-link.netlify.app/how-it-works" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://servi-link.netlify.app/en/how-it-works" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://servi-link.netlify.app/ar/how-it-works" />
   </url>
 
   <!-- Page Testimonials -->
@@ -42,8 +43,8 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://servi-link.netlify.app/testimonials" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://servi-link.netlify.app/testimonials" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://servi-link.netlify.app/testimonials" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://servi-link.netlify.app/en/testimonials" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://servi-link.netlify.app/ar/testimonials" />
   </url>
 
 </urlset>
