@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import SchemaOrg from './components/SchemaOrg';
 import './App.css';
 
-// Importez le nouveau composant Home
+
 import Home from './pages/Home'; 
 
 // Importez les composants qui deviendront des pages dédiées
