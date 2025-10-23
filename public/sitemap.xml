@@ -4,46 +4,46 @@
   
   <!-- Page d'accueil -->
   <url>
-    <loc>https://servilink.netlify.app/</loc>
+    <loc>https://servi-link.netlify.app/</loc>
     <lastmod>2025-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://servilink.netlify.app/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://servilink.netlify.app/" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://servilink.netlify.app/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://servi-link.netlify.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://servi-link.netlify.app/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://servi-link.netlify.app/" />
   </url>
 
   <!-- Page Features -->
   <url>
-    <loc>https://servilink.netlify.app/features</loc>
+    <loc>https://servi-link.netlify.app/features</loc>
     <lastmod>2025-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://servilink.netlify.app/features" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://servilink.netlify.app/features" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://servilink.netlify.app/features" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://servi-link.netlify.app/features" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://servi-link.netlify.app/features" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://servi-link.netlify.app/features" />
   </url>
 
   <!-- Page How It Works -->
   <url>
-    <loc>https://servilink.netlify.app/how-it-works</loc>
+    <loc>https://servi-link.netlify.app/how-it-works</loc>
     <lastmod>2025-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://servilink.netlify.app/how-it-works" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://servilink.netlify.app/how-it-works" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://servilink.netlify.app/how-it-works" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://servi-link.netlify.app/how-it-works" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://servi-link.netlify.app/how-it-works" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://servi-link.netlify.app/how-it-works" />
   </url>
 
   <!-- Page Testimonials -->
   <url>
-    <loc>https://servilink.netlify.app/testimonials</loc>
+    <loc>https://servi-link.netlify.app/testimonials</loc>
     <lastmod>2025-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://servilink.netlify.app/testimonials" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://servilink.netlify.app/testimonials" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://servilink.netlify.app/testimonials" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://servi-link.netlify.app/testimonials" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://servi-link.netlify.app/testimonials" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://servi-link.netlify.app/testimonials" />
   </url>
 
 </urlset>
