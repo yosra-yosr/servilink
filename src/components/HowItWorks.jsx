@@ -7,7 +7,7 @@ import {
   CheckCircleOutlined 
 } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
-
+import SEOHead from './SEOHead';
 const { Title, Paragraph } = Typography;
 
 const HowItWorks = ({ isDedicatedPage = false }) => {
@@ -40,6 +40,14 @@ const HowItWorks = ({ isDedicatedPage = false }) => {
   }));
 const sectionId = isDedicatedPage ? undefined : "how-it-works";
   return (
+    <>
+     {isDedicatedPage && (
+        <SEOHead 
+          title="Comment ça marche"
+          description="Apprenez à utiliser ServiLink en 4 étapes simples : télécharger, créer un profil, rechercher et profiter."
+          keywords="tutoriel, guide, comment utiliser, étapes"
+        />
+      )}
     <section className="how-it-works" id={sectionId}>
       <div className="container">
         <div className="section-header">
@@ -99,7 +107,7 @@ const sectionId = isDedicatedPage ? undefined : "how-it-works";
           <div className="process-overlay"></div>
         </div>
       </div>
-    </section>
+    </section></>
   );
 };
 

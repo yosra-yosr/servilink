@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://servilink.netlify.app/</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://servilink.netlify.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://servilink.netlify.app/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://servilink.netlify.app/" />
+  </url>
+
+  <!-- Page Features -->
+  <url>
+    <loc>https://servilink.netlify.app/features</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://servilink.netlify.app/features" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://servilink.netlify.app/features" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://servilink.netlify.app/features" />
+  </url>
+
+  <!-- Page How It Works -->
+  <url>
+    <loc>https://servilink.netlify.app/how-it-works</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://servilink.netlify.app/how-it-works" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://servilink.netlify.app/how-it-works" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://servilink.netlify.app/how-it-works" />
+  </url>
+
+  <!-- Page Testimonials -->
+  <url>
+    <loc>https://servilink.netlify.app/testimonials</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://servilink.netlify.app/testimonials" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://servilink.netlify.app/testimonials" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://servilink.netlify.app/testimonials" />
+  </url>
+
+</urlset>

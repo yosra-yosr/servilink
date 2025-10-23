@@ -9,7 +9,7 @@ import {
   EnvironmentOutlined
 } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
-
+import SEOHead from './SEOHead';
 const { Title, Paragraph } = Typography;
 
 const Features = ({ isDedicatedPage = false }) => {
@@ -46,6 +46,13 @@ const Features = ({ isDedicatedPage = false }) => {
   }));
 const sectionId = isDedicatedPage ? undefined : "features";
   return (
+    <> {isDedicatedPage && (
+        <SEOHead 
+          title="Fonctionnalités"
+          description="Découvrez toutes les fonctionnalités de ServiLink : recherche intelligente, avis vérifiés, réservation instantanée."
+          keywords="fonctionnalités, recherche, avis, réservation, paiement sécurisé"
+        />
+      )}
     <section className="features" id={sectionId}>
       <div className="container">
         <div className="section-header">
@@ -83,6 +90,7 @@ const sectionId = isDedicatedPage ? undefined : "features";
         </div>
       </div>
     </section>
+    </>
   );
 };
 

@@ -1,3 +1,27 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt for ServiLink
+
+# Allow all robots to access all content
 User-agent: *
-Disallow:
+Allow: /
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow access to certain directories (if needed)
+# User-agent: *
+# Disallow: /admin/
+# Disallow: /api/
+# Disallow: /private/
+
+# Crawl delay (optional, helps prevent server overload)
+# Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://servilink.netlify.app/sitemap.xml

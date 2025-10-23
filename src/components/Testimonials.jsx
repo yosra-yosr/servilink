@@ -12,6 +12,14 @@ const Testimonials = ({ isDedicatedPage = false }) => {
   const testimonials = t('testimonials', { returnObjects: true });
 const sectionId = isDedicatedPage ? undefined : "how-it-works";
   return (
+   <>
+   {isDedicatedPage && (
+        <SEOHead 
+          title="Témoignages"
+          description="Découvrez ce que nos 5000+ utilisateurs disent de ServiLink. Note moyenne : 4.8/5."
+          keywords="témoignages, avis clients, satisfaction, retours utilisateurs"
+        />
+      )} 
     <section className="testimonials" id={sectionId}>
       <div className="container">
         <div className="section-header">
@@ -77,7 +85,7 @@ const sectionId = isDedicatedPage ? undefined : "how-it-works";
           </Row>
         </div>
       </div>
-    </section>
+    </section></>
   );
 };
 
